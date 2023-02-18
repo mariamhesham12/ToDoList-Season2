@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+   }
+.container{
+    width: 95%;
+    margin: auto;
+    border: 1px solid transparent;
+}
+.header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin:25px 0px;
+}
+.header h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgb(128, 118, 165);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(196, 139, 214);
+}
+.user-input{
+    width: 430px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.user-input input{
+    width: 80%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.user-input button{
+    padding: 8px;
+    width: fit-content;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: rgb(59, 59, 130);
+    text-shadow: 2px 2px 5px rgb(196, 139, 214);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.to-do-items{
+    background-color: aliceblue;
+    width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    /* margin-top: 15px; */
+    padding-top:20px ;
+    padding-bottom: 45px;
+}
+.item{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(87, 119, 200);
+    margin: auto;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(44, 42, 42, 0.912);
+    padding: 8px;
+}
+.item i{
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.done{
+    text-decoration: line-through;
+    color: red;
+}
+#deleteBtn{
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding:3px 8px;
+    background-color: rgba(170, 157, 182, 0.638);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px rgb(196, 139, 214);
+    color: rgb(49, 24, 73);
+}
+#deleteBtn:hover{
+    background-color: rgba(76, 62, 90, 0.936);
+    color: rgb(242, 241, 243);
+
+}
+@media(max-width:768px){
+    
+    .header{
+        align-items: center;
+    }
+    .user-input{
+        width: 100%;
+    }
+    .to-do-items{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .user-input input{
+        width: 70%;
+    }
+    .user-input{
+        font-size: 12px;
+    }
+    .header h2{
+        font-size: 23px;
+    }
+    .to-do-items{
+        font-size: 12px;
+    }
+}
+@media(max-width:320px){
+    .user-input input{
+        width: 60%;
+    }
+}
